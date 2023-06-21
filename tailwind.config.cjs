@@ -15,6 +15,9 @@ module.exports = {
         "silver": "#afafaf",
         "error": "#d22d2d"
       },
+      backgroundImage: {
+        "hero": "url('./assets/images/hero-bio.jpg')"
+      },
       fontFamily: {
         avenir: ["Avenir", "cursive"],
       }

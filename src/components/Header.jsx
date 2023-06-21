@@ -1,20 +1,23 @@
-import { Link } from "react-router-dom"
-import BandLogo from "../assets/logo/Logo-bandsite.svg"
+import { Link } from "react-router-dom";
+import BandLogo from "../assets/logo/Logo-bandsite.svg";
 
 function Header() {
   return (
-    <header className="bg-primary-dark flex align-middle justify-center">
-      <nav className="flex-column">
-        <Link to ="/">
-        <img src={BandLogo} alt="logo-bandsite"/>
+    <header>
+      <nav className="bg-primary-dark">
+        <Link to="/" className="flex justify-center pt-4">
+          <img src={BandLogo} alt="logo-bandsite" />
         </Link>
-        <ul className="text-primary-light flex">
-          <li className="w-full">Biography</li>
-          <li className="w-full">Shows</li>
+        <ul className="text-primary-light flex text-center">
+          <li className="w-full py-2 border-b-4">Biography</li>
+          <li className="w-full py-2 text-secondary-light">Shows</li>
         </ul>
       </nav>
+      <div className="bg-hero h-[50vh] bg-no-repeat bg-center bg-cover flex items-center text-primary-light text-[2rem] object-right">
+        <h1>The Bees Knees</h1>
+      </div>
     </header>
-  )
+  );
 }
 
-export default Header
+export default Header;
