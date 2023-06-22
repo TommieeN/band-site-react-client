@@ -1,6 +1,10 @@
+import Musicians from "../components/Musicians"
+
 function HomePage() {
   return (
-    <div>HomePage</div>
+    <div>
+      <Musicians />
+    </div>
   )
 }
 
