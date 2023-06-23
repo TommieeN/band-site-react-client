@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import BandLogo from "../assets/logo/Logo-bandsite.svg";
 
-function Header() {
+const Header = () => {
   return (
     <header>
       <nav className="bg-primary-dark">

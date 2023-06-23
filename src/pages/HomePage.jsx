@@ -1,11 +1,13 @@
+import CommentForm from "../components/CommentForm"
 import Gallery from "../components/Gallery"
 import Musicians from "../components/Musicians"
 
-function HomePage() {
+const HomePage = () => {
   return (
     <div>
       <Musicians />
       <Gallery />
+      <CommentForm />
     </div>
   )
 }

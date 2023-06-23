@@ -8,8 +8,8 @@ import GalleryImage7 from "../assets/images/Photo-gallery-7.jpg";
 import GalleryImage8 from "../assets/images/Photo-gallery-8.jpg";
 import GalleryImage9 from "../assets/images/Photo-gallery-9.jpg";
 
-function Gallery() {
-    
+const Gallery = () => {
+
   const imagePaths = [
     GalleryImage1,
     GalleryImage2,

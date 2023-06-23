@@ -1,6 +1,6 @@
 import BandLogo from "../assets/images/band.jpg";
 
-function Musicians() {
+const Musicians = () => {
   return (
     <div>
       <div className="p-4">

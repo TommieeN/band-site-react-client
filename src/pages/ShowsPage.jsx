@@ -1,4 +1,4 @@
-function ShowsPage() {
+const ShowsPage = () => {
   return (
     <div>ShowsPage</div>
   )
