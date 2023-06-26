@@ -1,7 +1,8 @@
-import CommentForm from "../components/CommentForm"
-import CommentList from "../components/CommentList"
-import Gallery from "../components/Gallery"
-import Musicians from "../components/Musicians"
+import CommentForm from "../components/CommentForm";
+import CommentList from "../components/CommentList";
+import Footer from "../components/Footer";
+import Gallery from "../components/Gallery";
+import Musicians from "../components/Musicians";
 
 const HomePage = () => {
   return (
@@ -10,8 +11,9 @@ const HomePage = () => {
       <Gallery />
       <CommentForm />
       <CommentList />
+      <Footer />
     </div>
-  )
-}
+  );
+};
 
-export default HomePage
+export default HomePage;

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import BandLogo from "../assets/logo/Logo-bandsite.svg";
+import BandLogo from "../assets/icons/Logo-bandsite.svg";
 
 const Header = () => {
   return (
