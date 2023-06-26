@@ -8,19 +8,17 @@ const CommentForm = () => {
       </h2>
       <div className="flex">
         <img
-          className="w-[2.2rem] h-[2.2rem] rounded-full object-cover object-left mr-3 mt-6"
+          className="avatarStyle mt-6"
           src={Avatar}
           alt="user-avatar"
         />
         <form className="flex flex-col w-full">
           <div className="flex flex-col">
-            <label className="text-[0.7rem] text-silver" for="name">
+            <label className="text-[0.7rem] text-silver">
               NAME
             </label>
             <input
-              className="mb-[1rem] mt-[0.5rem] p-[0.5rem] text-[0.8rem]
-               placeholder-primary-dark bg-tertiary-light border border-secondary-light 
-               rounded-[4px] font-light"
+              className="mb-[1rem] mt-[0.5rem] input"
               placeholder="Enter your name"
               type="text"
               name="name"
@@ -28,9 +26,7 @@ const CommentForm = () => {
           </div>
           <label className="text-[0.7rem] text-silver">COMMENT</label>
           <textarea
-            className=" my-[0.5rem] p-[0.5rem] text-[0.8rem] 
-            placeholder-primary-dark bg-tertiary-light border border-secondary-light 
-            rounded-[4px] font-light"
+            className=" my-[0.5rem] input"
             placeholder="Add a new comment"
             name="comment"
             id="comment"
@@ -42,7 +38,6 @@ const CommentForm = () => {
           </button>
         </form>
       </div>
-      {/* COMMENT LIST HERE MAYBE */}
     </section>
   );
 };
