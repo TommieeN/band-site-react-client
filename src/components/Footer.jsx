@@ -2,7 +2,7 @@ import logos from "../assets/icons/index.js";
 
 const Footer = () => {
   return (
-    <footer className="px-[1rem] mt-[1rem] bg-primary-dark text-primary-light">
+    <footer className="px-[1rem] mt-[1rem] bg-primary-dark text-primary-light text-[0.8rem]">
       <div>
         <h2 className="py-[1rem] text-[1.5rem] font-normal">Get in Touch</h2>
         <section className="flex gap-[2rem]">
@@ -22,43 +22,43 @@ const Footer = () => {
       </div>
       <div>
         <section className="py-4">
-          <div className="">
+          <div className="font-semibold my-[1rem]">
             <h4>Cam Adams</h4>
             <h4>The Bees Knees Management</h4>
           </div>
-          <div>
+          <div className="mb-[1rem]">
             <p>503 Broadway Penthouse,</p>
             <p>New York, NY 10012, USA</p>
           </div>
           <p>info@thebeesknees.com</p>
         </section>
         <section>
-          <div>
+          <div className="font-semibold my-[1rem]">
             <h4>Pearl Gregg</h4>
             <h4>Limitless Artist Group</h4>
           </div>
-          <div>
+          <div className="mb-[1rem]">
             <p>Booking Agent for</p>
             <p>US / South America / Japan</p>
           </div>
           <p>pearl.gregg@limitlessag.com</p>
         </section>
         <section>
-          <div>
+          <div className="font-semibold my-[1rem]">
             <h4>Carson Whyte</h4>
             <h4>ARCH Entertainment</h4>
           </div>
-          <div>
+          <div className="mb-[1rem]">
             <p>Booking Agent for</p>
             <p>UK / EU / AU</p>
           </div>
-          <p>cwhyte@archentertainment.com</p>
+          <p className="mb-[4rem]">cwhyte@archentertainment.com</p>
         </section>
       </div>
-      <a>
+      <a href="#">
         <img src={logos.bandsite} alt="bandsite-logo" />
       </a>
-      <p>Copyright The Bees Knees © 2021 All Rights Reserved</p>
+      <p className="text-[0.65rem] py-[1rem]">Copyright The Bees Knees © 2021 All Rights Reserved</p>
     </footer>
   );
 };
