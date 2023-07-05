@@ -9,8 +9,12 @@ const Header = () => {
           <img src={BandLogo} alt="logo-bandsite" />
         </Link>
         <ul className="text-primary-light flex text-center">
+          <Link to="/" className="w-full">
           <li className="w-full py-2 border-b-4">Biography</li>
+          </Link>
+          <Link to="/shows" className="w-full">
           <li className="w-full py-2 text-secondary-light">Shows</li>
+          </Link>
         </ul>
       </nav>
       <div

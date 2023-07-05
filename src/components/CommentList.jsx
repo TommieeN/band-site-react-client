@@ -13,6 +13,9 @@ const CommentList = () => {
     axios.get(`${api}comments`).then((response) => {
       const comments = response.data;
       setCommentList(comments);
+          comments.sort((a, b) => {
+        return b.timestamp - a.timestamp;
+      });
     });
   }, [commentList]);
   return (
