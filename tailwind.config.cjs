@@ -16,7 +16,7 @@ module.exports = {
         "error": "#d22d2d"
       },
       backgroundImage: {
-        "hero": "url('./assets/images/hero-bio.jpg')"
+        "hero": "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assets/images/hero-bio.jpg')"
       },
       fontFamily: {
         avenir: ["Avenir", "cursive"],

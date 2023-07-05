@@ -14,7 +14,7 @@ const CommentList = () => {
       const comments = response.data;
       setCommentList(comments);
     });
-  }, []);
+  }, [commentList]);
   return (
     <ul>
       {commentList &&

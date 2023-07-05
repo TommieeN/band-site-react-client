@@ -10,6 +10,7 @@ const App = () => {
    <Header />
    <Routes>
     <Route path="/" element={<HomePage />} />
+    <Route path="/comments" element={<HomePage />} />
    </Routes>
    </BrowserRouter>
   )
