@@ -22,7 +22,7 @@ const CommentList = () => {
           return (
             <li className="flex mx-4 border-secondary-light border-b-[1px] first:border-t-[1px]" key={commentItem.id}>
               <img className="avatarStyle mt-[1.3rem]" src={avatar} alt="user-avatar" />
-              <div className="flex flex-col py-2">
+              <div className="w-[100%] flex flex-col py-2">
                 <div className="flex justify-between py-2 text-[0.8rem]">
                   <p>{commentItem.name}</p>
                   <p className="text-silver font-light">{timeStampConverter(commentItem.timestamp)}</p>
