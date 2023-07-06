@@ -13,6 +13,10 @@
     placeholder-primary-dark bg-tertiary-light border border-secondary-light 
     rounded-[4px] font-light
   }
+
+  .hero {
+    @apply bg-no-repeat bg-center bg-cover
+  }
 }
 
 /* FONT */
