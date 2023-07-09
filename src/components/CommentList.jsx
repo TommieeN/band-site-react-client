@@ -7,8 +7,10 @@ import { useState, useEffect } from "react";
 const api = "http://localhost:8081/";
 
 const CommentList = () => {
+
   const [commentList, setCommentList] = useState([]);
 
+  // GET THE COMMENTS FROM THE API & SORT THEM BY TIMESTAMP
   useEffect(() => {
     axios.get(`${api}comments`).then((response) => {
       const comments = response.data;
@@ -18,6 +20,8 @@ const CommentList = () => {
       });
     });
   }, [commentList]);
+
+
   return (
     <ul>
       {commentList &&

@@ -17,6 +17,10 @@
   .hero {
     @apply bg-no-repeat bg-center bg-cover
   }
+
+  .shows-text {
+    @apply text-[0.6rem] font-medium text-silver
+  }
 }
 
 /* FONT */

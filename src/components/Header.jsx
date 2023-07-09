@@ -1,20 +1,32 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
+import { useEffect, useState } from "react";
+
 import BandLogo from "../assets/icons/Logo-bandsite.svg";
 
 const Header = () => {
+
+  // GET CURRENT LOCATION
+  const location = useLocation();
+  const [active, setActive] = useState(false);
+
+  // SET ACTIVE STATE TO CURRENT LOCATION
+  useEffect(() => {
+    setActive(location.pathname);
+  },[location])
+
   return (
     <header>
       <nav className="bg-primary-dark">
-        <Link to="/" className="flex justify-center pt-4">
+        <Link to="/" onClick={() => toggleActive} className="flex justify-center pt-4">
           <img src={BandLogo} alt="logo-bandsite" />
         </Link>
         <ul className="text-primary-light flex text-center">
-          <Link to="/" className="w-full">
-          <li className="w-full py-2 border-b-4">Biography</li>
-          </Link>
-          <Link to="/shows" className="w-full">
-          <li className="w-full py-2 text-secondary-light">Shows</li>
-          </Link>
+        <li className={`w-full py-2 ${active === "/" ? "border-b-4" : ""}`}>
+            <Link to="/">Biography</Link>
+          </li>
+          <li className={`w-full py-2 ${active === "/shows" ? "border-b-4" : ""}`}>
+            <Link to="/shows">Shows</Link>
+          </li>
         </ul>
       </nav>
     </header>

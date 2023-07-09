@@ -10,9 +10,9 @@ module.exports = {
         "primary-dark": "#323232",
         "primary-darkblack": "#000000",
         "primary-light": "#ffffff",
-        "secondary-light": "#e1e1e1",
+        "secondary-light": "#E1E1E1",
         "tertiary-light": "#fafafa",
-        "silver": "#afafaf",
+        "silver": "#AFAFAF",
         "error": "#d22d2d"
       },
       backgroundImage: {

@@ -1,9 +1,9 @@
+import Hero from "../components/Hero";
+import Gallery from "../components/Gallery";
+import Musicians from "../components/Musicians";
 import CommentForm from "../components/CommentForm";
 import CommentList from "../components/CommentList";
-import Footer from "../components/Footer";
-import Gallery from "../components/Gallery";
-import Hero from "../components/Hero";
-import Musicians from "../components/Musicians";
+
 
 const HomePage = () => {
   return (
@@ -13,7 +13,6 @@ const HomePage = () => {
       <Gallery />
       <CommentForm />
       <CommentList />
-      <Footer />
     </div>
   );
 };
