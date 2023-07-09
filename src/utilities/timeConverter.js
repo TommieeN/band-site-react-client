@@ -11,4 +11,18 @@ const timeStampConverter = function (timeStamp) {
     return newTimeDisplay;
   };
 
-  export default timeStampConverter
+const showsTimeStampConverter = function (timeStamp) {
+    const timeDisplay = new Date(timeStamp);
+  
+    //convert date to use this format of time mm/dd/year
+    const dateformat = {
+      weekday: "short",
+      month: "short",
+      day: "2-digit",
+      year: "numeric",
+    };
+    const newTimeDisplay = timeDisplay.toLocaleDateString("en-US", dateformat);
+    return newTimeDisplay;
+  };
+
+  export {timeStampConverter, showsTimeStampConverter}

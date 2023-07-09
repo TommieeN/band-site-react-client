@@ -1,6 +1,6 @@
 import axios from "axios";
 import avatar from "../assets/images/Mohan-muruge.jpg";
-import timeStampConverter from "../utilities/timeConverter";
+import { timeStampConverter } from "../utilities/timeConverter";
 
 import { useState, useEffect } from "react";
 

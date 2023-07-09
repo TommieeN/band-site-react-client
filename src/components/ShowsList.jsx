@@ -1,5 +1,5 @@
 import axios from "axios";
-import timeStampConverter from "../utilities/timeConverter";
+import { showsTimeStampConverter } from "../utilities/timeConverter";
 import { useEffect, useState } from "react";
 
 const ShowsList = () => {
@@ -22,7 +22,7 @@ const ShowsList = () => {
               <div className="py-[1rem]">
                 <h3 className="shows-text">DATE</h3>
                 <p className="text-[0.8rem] font-semibold">
-                  {timeStampConverter(show.date)}
+                  {showsTimeStampConverter(show.date)}
                 </p>
               </div>
               <div className="pb-[1rem]">
