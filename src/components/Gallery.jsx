@@ -24,10 +24,10 @@ const Gallery = () => {
 
   return (
     <div className="p-4 bg-tertiary-light md:px-[1.5rem]">
-      <h2 className="text-primary-dark text-[1.5rem] font-semibold md:text-[2.2rem] md:px-[1rem] md:py-[1rem]">
+      <h2 className="text-primary-dark text-[1.5rem] font-semibold md:text-[2.2rem] md:px-[1rem] md:py-[1rem] lg:px-[6.7rem]">
         Photo Gallery
       </h2>
-      <div className="flex flex-col md:flex-row md:flex-wrap md:justify-center md:gap-[1.5rem]">
+      <div className="flex flex-col md:flex-row md:flex-wrap md:justify-center md:gap-[1.5rem] lg:px-[4.8rem]">
         {imagePaths.map((image, index) => (
           <img className="py-2 md:w-[30%] md:p-0" key={index} src={image} />
         ))}

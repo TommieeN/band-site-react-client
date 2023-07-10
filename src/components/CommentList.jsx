@@ -27,7 +27,7 @@ const CommentList = () => {
       {commentList &&
         commentList.map((commentItem) => {
           return (
-            <li className="flex mx-4 border-secondary-light border-b-[1px] first:border-t-[1px] md:mx-[5.6rem] md:py-[1rem] md:pl-[0.4rem]" key={commentItem.id}>
+            <li className="flex mx-4 border-secondary-light border-b-[1px] first:border-t-[1px] md:mx-[5.6rem] md:py-[1rem] md:pl-[0.4rem] lg:mx-[24rem]" key={commentItem.id}>
               <img className="avatarStyle mt-[1.3rem] md:w-[3rem] md:h-[3rem]" src={avatar} alt="user-avatar" />
               <div className="w-[100%] flex flex-col py-2">
                 <div className="flex justify-between py-2 text-[0.8rem]">

@@ -1,8 +1,9 @@
 import logos from "../assets/icons/index.js";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="px-[1rem] mt-[1rem] bg-primary-dark text-primary-light text-[0.8rem] md:px-[2rem]">
+    <footer className="px-[1rem] mt-[1rem] bg-primary-dark text-primary-light text-[0.8rem] md:px-[2rem] md:mt-[3rem] lg:px-[8rem]">
       <div className="md:flex md:items-center md:justify-between md:gap-[1rem]">
         <h2 className="py-[1rem] text-[1.5rem] font-normal md:text-[2.5rem] md:w-[33%]">Get in Touch</h2>
         <section className="flex gap-[2rem] md:w-[50%]">
@@ -20,7 +21,7 @@ const Footer = () => {
           <img className="hidden md:block" src={logos.bandsite} alt="bandsite-logo" />
         </a>
       </div>
-      <div className="md:flex">
+      <div className="md:flex md:justify-between lg:justify-start lg:gap-[5rem]">
         <section className="py-4 md:p-0">
           <div className="font-semibold my-[1rem]">
             <h4>Cam Adams</h4>
@@ -55,10 +56,10 @@ const Footer = () => {
           <p className="mb-[4rem]">cwhyte@archentertainment.com</p>
         </section>
       </div>
-      <a href="#">
+      <Link to="/">
         <img className="md:hidden" src={logos.bandsite} alt="bandsite-logo" />
-      </a>
-      <p className="text-[0.65rem] py-[1rem]">Copyright The Bees Knees © 2021 All Rights Reserved</p>
+      </Link>
+      <p className="text-[0.65rem] py-[1rem] md:pb-[3rem] md:text-[0.85rem] md:font-light md:pt-0">Copyright The Bees Knees © 2021 All Rights Reserved</p>
     </footer>
   );
 };

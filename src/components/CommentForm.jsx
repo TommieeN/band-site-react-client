@@ -27,10 +27,10 @@ const CommentForm = () => {
 
   return (
     <section className="p-4">
-      <h2 className="text-primary-dark text-[1.5rem] font-medium pb-4 md:px-[1.5rem] md:text-[2.2rem] md:font-semibold">
+      <h2 className="text-primary-dark text-[1.5rem] font-medium pb-4 md:px-[1.5rem] md:text-[2.2rem] md:font-semibold lg:px-[7rem] lg:pt-[2rem]">
         Join the Conversation
       </h2>
-      <div className="flex md:px-[5rem]">
+      <div className="flex md:px-[5rem] lg:px-[23.5rem]">
         <img
           className="avatarStyle mt-6 md:w-[3rem] md:h-[3rem]"
           src={Avatar}
@@ -59,7 +59,7 @@ const CommentForm = () => {
             onChange={(e) => setNewComment(e.target.value)}
           ></textarea>
           <div className="md:flex md:justify-end">
-          <button className="bg-primary-dark rounded-[4px] text-primary-light p-2 my-2 md:w-[10rem]">
+          <button className="bg-primary-dark rounded-[4px] w-[100%] text-primary-light p-2 my-2 md:w-[10rem]">
             COMMENT
           </button>
           </div>

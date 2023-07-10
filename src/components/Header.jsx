@@ -16,11 +16,11 @@ const Header = () => {
 
   return (
     <header>
-      <nav className="bg-primary-dark md:flex pb-0 p-[1rem] gap-[4rem]">
-        <Link to="/" onClick={() => toggleActive} className="flex justify-center pt-4 md: pb-[1.5rem] p-0">
+      <nav className="bg-primary-dark gap-[4rem] md:flex md:pb-0 md:p-[1rem] lg:pl-[7.6rem] lg:gap-[2rem]">
+        <Link to="/" onClick={() => toggleActive} className="flex justify-center pt-4 md:pb-[1.5rem] p-0">
           <img src={BandLogo} alt="logo-bandsite" />
         </Link>
-        <ul className="text-primary-light flex text-center md: pt-[0.2rem] gap-[4rem]">
+        <ul className="text-primary-light flex text-center md:pt-[0.2rem] md:gap-[4rem] lg:text-[0.8rem]">
         <li className={`w-full py-2 ${active === "/" ? "border-b-4" : "text-silver"}`}>
             <Link to="/">Biography</Link>
           </li>
