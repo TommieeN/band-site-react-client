@@ -1,4 +1,4 @@
-<h3 align="left"> BandSite, A Responsive Website using REST API's. https://my-band-site.netlify.app/</h3>
+<h3 align="left"> BandSite, A Responsive Website using REST API's pulling data from the backend. https://my-band-site.netlify.app/</h3>
 
 
  
@@ -8,7 +8,7 @@
 
 
 
- <h3>Front End <a href="https://github.com/TommieeN/band-site">Repo</a></h3>
+ <h3>Front End <a href="https://github.com/TommieeN/band-site-react-client">Repo</a></h3>
  <ul>
   <li>REACT.JS</li>
   <li>REACT-ROUTER-DOM</li>
