@@ -18,3 +18,12 @@
  </ul>
  
  
+<h3>Back End <a href="https://github.com/TommieeN/bandsite-server">Repo</a></h3>
+ <ul>
+  <li>EXPRESS</li>
+  <li>NODE</li>
+  <li>JSON</li>
+  <li>FS</li>
+  <li>CORS</li>
+  <li>UUID</li>
+ </ul>
