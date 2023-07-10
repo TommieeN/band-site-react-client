@@ -20,7 +20,7 @@ module.exports = {
         "hero-shows": "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.25)), url('./assets/images/hero-shows.jpg')",
       },
       fontFamily: {
-        avenir: ["Avenir", "cursive"],
+        avenir: ["AvenirNext LT Pro", "cursive"],
       }
     },
     screens: {

@@ -27,12 +27,12 @@ const CommentForm = () => {
 
   return (
     <section className="p-4">
-      <h2 className="text-primary-dark text-[1.5rem] font-medium pb-4">
+      <h2 className="text-primary-dark text-[1.5rem] font-medium pb-4 md:px-[1.5rem] md:text-[2.2rem] md:font-semibold">
         Join the Conversation
       </h2>
-      <div className="flex">
+      <div className="flex md:px-[5rem]">
         <img
-          className="avatarStyle mt-6"
+          className="avatarStyle mt-6 md:w-[3rem] md:h-[3rem]"
           src={Avatar}
           alt="user-avatar"
         />
@@ -42,7 +42,7 @@ const CommentForm = () => {
               NAME
             </label>
             <input
-              className="mb-[1rem] mt-[0.5rem] input"
+              className="mb-[1rem] mt-[0.5rem] input md:py-[0.8rem]"
               placeholder="Enter your name"
               type="text"
               name="name"
@@ -50,7 +50,7 @@ const CommentForm = () => {
           </div>
           <label className="text-[0.7rem] text-silver">COMMENT</label>
           <textarea
-            className=" my-[0.5rem] input"
+            className=" my-[0.5rem] input resize-none md:p-[1rem] md:h-[6rem]"
             placeholder="Add a new comment"
             name="comment"
             id="comment"
@@ -58,9 +58,11 @@ const CommentForm = () => {
             rows="5"
             onChange={(e) => setNewComment(e.target.value)}
           ></textarea>
-          <button className="bg-primary-dark rounded-[4px] text-primary-light p-2 my-2">
+          <div className="md:flex md:justify-end">
+          <button className="bg-primary-dark rounded-[4px] text-primary-light p-2 my-2 md:w-[10rem]">
             COMMENT
           </button>
+          </div>
         </form>
       </div>
     </section>

@@ -16,15 +16,15 @@ const Header = () => {
 
   return (
     <header>
-      <nav className="bg-primary-dark">
-        <Link to="/" onClick={() => toggleActive} className="flex justify-center pt-4">
+      <nav className="bg-primary-dark md:flex pb-0 p-[1rem] gap-[4rem]">
+        <Link to="/" onClick={() => toggleActive} className="flex justify-center pt-4 md: pb-[1.5rem] p-0">
           <img src={BandLogo} alt="logo-bandsite" />
         </Link>
-        <ul className="text-primary-light flex text-center">
-        <li className={`w-full py-2 ${active === "/" ? "border-b-4" : ""}`}>
+        <ul className="text-primary-light flex text-center md: pt-[0.2rem] gap-[4rem]">
+        <li className={`w-full py-2 ${active === "/" ? "border-b-4" : "text-silver"}`}>
             <Link to="/">Biography</Link>
           </li>
-          <li className={`w-full py-2 ${active === "/shows" ? "border-b-4" : ""}`}>
+          <li className={`w-full py-2 ${active === "/shows" ? "border-b-4" : "text-silver"}`}>
             <Link to="/shows">Shows</Link>
           </li>
         </ul>

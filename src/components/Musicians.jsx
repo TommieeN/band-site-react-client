@@ -4,22 +4,22 @@ const Musicians = () => {
   return (
     <div>
       <div className="p-4">
-        <h2 className="pb-2 text-[1.5rem] font-medium text-primary-dark">
+        <h2 className="pb-2 text-[1.5rem] font-medium text-primary-dark md:text-[2.4rem] md:px-[1.6rem]">
           About the Musicians
         </h2>
-        <img className="" src={BandLogo} />
+        <img className="md:px-[5rem] md:py-[1rem]" src={BandLogo} />
       </div>
       <section>
-        <p className="text-[0.85rem] leading-6 font-semibold text-primary-dark px-4">
+        <p className="text-[0.85rem] leading-6 font-semibold text-primary-dark px-4 md:text-[1.4rem] md:font-medium md:leading-[2rem] md:px-[6rem] ">
           "We push each other to be the best. It's not uncommon for one of us to
-          say "this needs to be better, back to the drawing board"
+          say 'this needs to be better, back to the drawing board'
         </p>
-        <p className="text-[0.85rem] leading-6 font-semibold text-primary-dark px-4">
+        <p className="text-[0.85rem] leading-6 font-semibold text-primary-dark px-4 md:px-[6rem] md:py-[1rem]">
           - Bryan Teddy, lead vocalist of The Bees Knees
         </p>
-        <div className="p-4">
-          <h2 className="pb-3 font-normal">The Bees Knees</h2>
-          <div className="flex flex-col gap-4 ">
+        <div className="p-4 md:px-[6rem]">
+          <h2 className="pb-3 font-normal md:text-[1.5rem] md:font-medium">The Bees Knees</h2>
+          <div className="flex flex-col gap-4 font-light md:flex md:flex-row md:gap-[2rem]">
             <p className="text-[0.8rem]">
               The Bees Knees is a pop rock band originating from San Francisco,
               California. The band consists of lead vocalist Bryan Teddy,
@@ -47,6 +47,6 @@ const Musicians = () => {
       </section>
     </div>
   );
-}
+};
 
 export default Musicians;
