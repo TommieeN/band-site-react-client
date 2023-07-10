@@ -19,7 +19,7 @@
   }
 
   .shows-text {
-    @apply text-[0.6rem] font-medium text-silver
+    @apply text-[0.6rem] font-medium text-silver md:hidden
   }
 }
 
