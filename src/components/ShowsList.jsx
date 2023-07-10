@@ -13,17 +13,24 @@ const ShowsList = () => {
   }, []);
 
   return (
-    <div className="md:px-[1.5rem]">
-      <h2 className="font-medium text-[1.5rem] p-[1rem] pb-0 md:text-[2rem] md:font-semibold md:py-[2rem]">Shows</h2>
-      <div className="hidden md:flex md:justify-start md:px-[1rem] md:text-silver md:text-[0.7rem] md:font-semibold">
-      <p className="md:w-[25%]">DATE</p>
-      <p className="md:w-[25%]">VENUE</p>
-      <p className="md:w-[25%]">LOCATION</p>
+    <div className="md:px-[1.5rem] lg:ml-[5.5rem]">
+      <div className="lg:flex lg:flex-1">
+        <h2 className="font-medium text-[1.5rem] p-[1rem] pb-0 md:text-[2rem] md:font-semibold md:py-[2rem] lg:w-[23%]">
+          Shows
+        </h2>
+        <div className="hidden md:flex md:justify-start md:px-[1rem] md:text-silver md:text-[0.7rem] md:font-semibold lg:w-[68%] lg:p-0 lg:items-center">
+          <p className="md:w-[25%]">DATE</p>
+          <p className="md:w-[25%]">VENUE</p>
+          <p className="md:w-[25%]">LOCATION</p>
+        </div>
       </div>
-      <ul>
+      <ul className="lg:ml-[15.5rem] lg:mr-[5rem]">
         {shows.map((show) => {
           return (
-            <li className="border-b p-[1rem] text-[0.8rem] md:flex md:justify-around md:items-center md:flex-1" key={show.id}>
+            <li
+              className="border-b p-[1rem] text-[0.8rem] md:flex md:justify-around md:items-center md:flex-1 lg:pl-[1rem]"
+              key={show.id}
+            >
               <div className="py-[1rem] md:w-[25%]">
                 <h3 className="shows-text">DATE</h3>
                 <p className="text-[0.8rem] font-semibold">
