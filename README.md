@@ -1,4 +1,4 @@
-<h3 align="left"> BandSite, A Responsive Website using REST API's pulling data from the backend. https://my-band-site.netlify.app/</h3>
+<h3 align="left"> BandSite, a Rehaul of my past <a href="https://github.com/TommieeN/band-site">project</a> now built with react for front-end and a node express back-end. https://my-band-site.netlify.app/</h3>
 
 
  
